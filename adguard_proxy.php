@@ -15,7 +15,6 @@ $username = getenv('USERNAME');
 $password = getenv('PASSWORD');
 
 if (empty($username) || empty($password)) {
-    header('Content-Type: application/json');
     echo json_encode(['error' => 'Missing username or password']);
     http_response_code(400);
     exit;
@@ -24,7 +23,6 @@ if (empty($username) || empty($password)) {
 $ch = curl_init();
 
 if ($ch === false) {
-    header('Content-Type: application/json');
     echo json_encode(['error' => 'Failed to initialize cURL']);
     http_response_code(500);
     exit;

@@ -15,7 +15,6 @@ $username = getenv('USERNAME');
 $password = getenv('PASSWORD');
 
 if (empty($username) || empty($password)) {
-    header('Content-Type: application/json');
     echo json_encode(['error' => 'Missing username or password']);
     http_response_code(400);
     exit;
