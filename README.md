@@ -2,6 +2,8 @@
 
 AdGuardHome Query Logs - Track the Query Logs from Adguard DNS Server.
 
+![dGuardHome Query Logs](https://raw.githubusercontent.com/mskian/adguardhome-query-logs/main/screenshot.png)  
+
 ## Features
 
 - Adblock DNS Server Status
