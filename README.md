@@ -18,6 +18,20 @@ USERNAME=
 PASSWORD=
 ```
 
+## Disclaimer
+
+- URL's using in this Project only for Testing Purpose  
+- we respecting there terms and privacy policy
+
+```sh
+
+$:~ Help Bloggers and Youtubers to Generate revenue from the ads and affilate
+
+
+$:~ Thank you
+
+```
+
 ## LICENSE
 
 MIT
