@@ -14,10 +14,17 @@ AdGuardHome Query Logs - Track the Query Logs from Adguard DNS Server.
 
 - create `env` and add your AdguardHome DNS Server Base URL, username and Password
 
-```sh
+```env
+
+## Adguard URL and Login Details
 BASE_URL=https://dns.example.com
 USERNAME=
 PASSWORD=
+
+## Login
+USER=
+PASS=
+
 ```
 
 ## Disclaimer

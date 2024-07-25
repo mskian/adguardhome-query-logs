@@ -1,3 +1,25 @@
+<?php
+
+header('X-Frame-Options: DENY');
+header('X-XSS-Protection: 1; mode=block');
+header('X-Content-Type-Options: nosniff');
+header('Strict-Transport-Security: max-age=63072000');
+header('X-Robots-Tag: noindex, nofollow', true);
+
+ini_set('session.cookie_httponly', 1);
+ini_set('session.cookie_secure', 1);
+
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+if (!isset($_SESSION['username'])) {
+    header('Location: user.php');
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -142,6 +164,11 @@
             <a class="pagination-previous" id="prev-page" aria-label="Previous page" aria-disabled="true">Previous</a>
             <a class="pagination-next" id="next-page" aria-label="Next page" aria-disabled="true">Next</a>
         </nav>
+        <br>
+        <hr>
+        <div class="has-text-centered">
+            <a href="logout.php" class="button is-danger is-rounded">Log out</a>
+        </div>
         <br>
     </div>
 
